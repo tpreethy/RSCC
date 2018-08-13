@@ -1,0 +1,39 @@
+<div id="t20" *ngIf="tourn=='t20'">
+  <h2 class="text-center team">T20 Team</h2>
+  <iframe class="t20"
+  width="1000"
+  height="600"
+  frameborder="0" style="border:0"
+  [src]='sanitizer.bypassSecurityTrustResourceUrl("https://cricclubs.com/MCCL/viewTeam.do?teamId=78&clubId=78")' allowfullscreen>
+  </iframe>
+</div> 
+
+<div id="t35" *ngIf="tourn=='t35'">
+  <h2 class="text-center team">T35 Team</h2>
+  <iframe class="t20"
+  width="1000"
+  height="600"
+  frameborder="0" style="border:0"
+  [src]='sanitizer.bypassSecurityTrustResourceUrl("https://cricclubs.com/MCCL/viewTeam.do?teamId=64&clubId=78")' allowfullscreen>
+  </iframe>
+</div> 
+
+<div id="npl" *ngIf="tourn=='npl'">
+  <h2 class="text-center team">NPL Team</h2>
+  <iframe class="t20"
+  width="1000"
+  height="600"
+  frameborder="0" style="border:0"
+  [src]='sanitizer.bypassSecurityTrustResourceUrl("https://cricclubs.com/NPL/viewTeam.do?teamId=205&clubId=65")' allowfullscreen>
+  </iframe>
+</div> 
+
+<div id="power" *ngIf="tourn=='power'">
+  <h2 class="text-center team">Power Tournament Team</h2>
+  <iframe class="t20"
+  width="1000"
+  height="600"
+  frameborder="0" style="border:0"
+  [src]='sanitizer.bypassSecurityTrustResourceUrl("https://cricclubs.com/PowerCricketTournament/viewTeam.do?teamId=56&clubId=2814")' allowfullscreen>
+  </iframe>
+</div> 

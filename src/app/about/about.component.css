@@ -1,0 +1,45 @@
+.about{
+    font-size: 18px;
+    font-family: -webkit-pictograph;
+}
+
+h2{
+    font-size:20px
+}
+h4{
+    font-size:18px;
+}
+
+iframe{
+    
+    width:100%;
+    height:800px;
+}
+
+@media (min-width: 1024px){
+    .about{
+      margin-left:144px;
+      margin-right:50px;
+      
+
+    }
+    
+}
+
+@media (max-width: 768px){
+    .about{
+      margin-left:144px;
+      margin-right:-202px;
+      
+
+    }
+    
+}
+
+@media (max-width: 425px){
+    .about{
+        
+        margin-left:144px;
+        margin-right:-580px;
+    }
+}
