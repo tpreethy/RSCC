@@ -17,11 +17,12 @@ import { HomeComponent } from './home/home.component';
 
 
 const appRoutes:Routes= [
-        {path:'',component:HomeComponent},
-        {path:'about', component: AboutComponent},
+        {path:'home',component:HomeComponent},
         {path:'team/:id',component: TeamComponent},
-        {path:'tournament',component: TournamentComponent},
-        {path:'contact',component:ContactComponent}
+        {path:'tournament/:id',component: TournamentComponent},
+        {path:'contact',component:ContactComponent},
+        { path: '**', redirectTo: 'home', pathMatch: 'full' }
+
       ];
 
 

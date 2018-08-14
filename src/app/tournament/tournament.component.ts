@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import { Router,ActivatedRoute } from '@angular/router';
+
 
 @Component({
   selector: 'app-tournament',
@@ -6,10 +9,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tournament.component.css']
 })
 export class TournamentComponent implements OnInit {
-
-  constructor() { }
+  tournament:any;
+  constructor(public sanitizer:DomSanitizer,private router:ActivatedRoute) { }
 
   ngOnInit() {
+    this.router.params.forEach(params=>{
+      this.tournament=params["id"];
+    
+   })
   }
 
 }

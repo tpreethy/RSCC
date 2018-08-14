@@ -1,3 +1,19 @@
-<p>
-  tournament works!
-</p>
+<div id="t20" *ngIf="tournament=='npl'">
+  <h2 class="text-center team">NPL</h2>
+  <iframe class="npl"
+  width="1000"
+  height="600"
+  frameborder="0" 
+  [src]='sanitizer.bypassSecurityTrustResourceUrl("https://cricclubs.com/npl")' allowfullscreen>
+  </iframe>
+</div> 
+
+<div id="t35" *ngIf="tournament=='mccl'">
+  <h2 class="text-center team">MCCL</h2>
+  <iframe class="mccl"
+  width="1000"
+  height="600"
+  frameborder="0" 
+  [src]='sanitizer.bypassSecurityTrustResourceUrl("https://cricclubs.com/mccl")' allowfullscreen>
+  </iframe>
+</div> 

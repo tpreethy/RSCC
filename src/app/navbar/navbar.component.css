@@ -51,7 +51,7 @@
         border-radius: 0.25rem;
     }
     .navbar-nav{
-        margin-left: -229px;
+        margin-left: -314px;
     }
 
 }
@@ -79,9 +79,12 @@
     }
 
     #navbarNav[_ngcontent-c1] {
-        margin-left: 23px;
+        margin-left: -312px;
     }
 
+    .navbar-nav{
+        margin-left: 376px;
+    }
 }
 
 
