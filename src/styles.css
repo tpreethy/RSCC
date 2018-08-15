@@ -9,4 +9,8 @@ html,body {
     padding-bottom: 50px; /*50px for the height of the bottom navbar*/
     /*background-image: url("./assets/bg.jpg")*/
   }
+
+  .banner-wrap .wsite-header-section .wsite-content-title{
+    word-break:normal!important
+  }
   
